@@ -1,0 +1,22 @@
+x=0
+i=0
+nums = [0,0,1,1,1,2,2,3,3,4]
+# for i in range (len(nums)-1):
+#     if nums[i]==nums[i+1]:
+#         print(i,'..',i+1)
+#         del(nums[i])
+#         nums.append('-')
+#     else:
+#         x+=1
+#     print(nums)
+a=len(nums)
+while i<a:
+    if nums[i]==nums[i+1]:
+        del(nums[i])
+        nums.append('_')
+        a-=1
+    else:
+        x+=1
+        i+=1
+    print(x)
+    print(nums)
